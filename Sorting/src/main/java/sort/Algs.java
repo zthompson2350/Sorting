@@ -19,6 +19,6 @@ public class Algs {
 		}
 	}
 
-	//testing username/email git configs
+	//testing username/email gitconfigs
 	
 }
