@@ -2,6 +2,7 @@ package sort;
 
 public class Algs {
 
+	// Finds unsorted values and inserts them into the correct place in the array
 	public void InsertionSort (int[] arr) {
 		
 		int k;
@@ -23,6 +24,7 @@ public class Algs {
 		}
 	}
 
+	// Selects smallest value in array and inserts it at the front of the array
 	public void SelectionSort (int[] arr) {
 		
 		int minloc;
@@ -45,6 +47,33 @@ public class Algs {
 			arr[i] = min;
 			
 		}
+	}
+	
+	
+	// Largest values "bubble up" to the end of the array
+	public void BubbleSort (int[] arr) {
+		
+		int j = arr.length;
+		int temp;
+		
+		while (j > 0) {
+			
+			for (int i = 0; i < j-1; i++) {
+				
+				if (arr[i] > arr[i+1]) {
+					
+					temp = arr[i];
+					arr[i] = arr[i+1];
+					arr[i+1] = temp;
+					
+				}
+				
+			}
+			
+			j--;
+			
+		}
+		
 	}
 	
 }
